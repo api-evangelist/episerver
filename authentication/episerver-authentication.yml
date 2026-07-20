@@ -1,0 +1,49 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.developers.optimizely.com/platform-optimizely/docs/authentication-with-oidc-for-optimizely-graph
+docs:
+  - https://docs.developers.optimizely.com/platform-optimizely/docs/authentication-with-oidc-for-optimizely-graph
+  - https://docs.developers.optimizely.com/commerce-connect/docs/authorization-and-authentication
+notes: >-
+  No OpenAPI is captured in this repo yet, so this profile is searched from the
+  Optimizely developer docs rather than derived. Optimizely's platform spans several
+  products with distinct auth models; Opti ID is the unifying OIDC identity platform.
+summary:
+  types: [oauth2, openIdConnect, apiKey, http]
+  identity_platform: Opti ID (unified OIDC identity)
+  oauth2_flows: [clientCredentials, authorizationCode]
+schemes:
+  - name: OptiIdOIDC
+    type: openIdConnect
+    product: Optimizely Graph / platform
+    description: >-
+      OpenID Connect via Opti ID. Access authorized on JWTs issued by Opti ID or a
+      federated IdP; access decided from claims (sub, cg-roles, email). Bearer JWT
+      in the Authorization header.
+  - name: GraphSingleKey
+    type: apiKey
+    in: query
+    parameter_name: auth
+    product: Optimizely Graph
+    description: Single-key access for read scenarios (public content delivery).
+  - name: GraphHMAC
+    type: http
+    scheme: hmac
+    product: Optimizely Graph
+    description: HMAC (app key + secret) signed requests for write/management scenarios.
+  - name: BasicAuth
+    type: http
+    scheme: basic
+    product: Optimizely Graph / backend services
+    description: Basic authentication for trusted backend service calls.
+  - name: FeatureExperimentationApiToken
+    type: http
+    scheme: bearer
+    product: Optimizely Feature Experimentation REST API
+    description: Personal access token / OAuth2 bearer token for the api.optimizely.com REST API.
+  - name: OdpApiKey
+    type: apiKey
+    in: header
+    parameter_name: x-api-key
+    product: Optimizely Data Platform (ODP)
+    description: Public/private API key for ODP REST and GraphQL endpoints.
