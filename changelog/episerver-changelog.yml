@@ -1,0 +1,24 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.developers.optimizely.com/
+notes: >-
+  Optimizely publishes dated changelogs per product line rather than one global feed.
+  The Content Marketing Platform (CMP) Open REST API and Feature Experimentation both
+  maintain numbered API-update changelog entries in the developer docs.
+scheme: per-product dated changelog entries
+changelogs:
+  - product: Content Marketing Platform (CMP) Open REST API
+    url: https://docs.developers.optimizely.com/content-marketing-platform/changelog/
+    recent_entries:
+      - id: api-update-14
+        url: https://docs.developers.optimizely.com/content-marketing-platform/changelog/api-update-14.md
+      - id: api-update-13
+        url: https://docs.developers.optimizely.com/content-marketing-platform/changelog/api-update-13.md
+      - id: new-endpoint-25
+        url: https://docs.developers.optimizely.com/content-marketing-platform/changelog/new-endpoint-25.md
+  - product: Feature Experimentation
+    url: https://docs.developers.optimizely.com/feature-experimentation/
+    note: Release notes and SDK release changelogs published per SDK repo on github.com/optimizely.
+  - product: Commerce Connect
+    url: https://docs.developers.optimizely.com/commerce-connect/docs/breaking-changes-for-commerce-14
+    note: Breaking-change guides published per major version (13 to 14).

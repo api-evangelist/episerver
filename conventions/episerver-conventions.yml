@@ -1,0 +1,33 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.developers.optimizely.com/
+notes: >-
+  Cross-cutting API semantics for Optimizely (formerly Episerver), searched from the
+  developer docs. No single OpenAPI is captured in this repo yet, so semantics are
+  described per product family rather than derived. No idempotency-key contract is
+  documented across the REST APIs, so no Idempotency pointer is asserted.
+authentication:
+  style: OIDC (Opti ID) bearer JWT; single-key and HMAC for Graph; API key for ODP
+  ref: authentication/episerver-authentication.yml
+pagination:
+  style: mixed per product
+  content_delivery: top/skip query parameters with continuation
+  graph: GraphQL cursor/limit + skip arguments
+  odp: page/limit query parameters
+versioning:
+  style: uri-path major versions per product (e.g. /api/episerver/v3.0, Graph v2)
+  ref: lifecycle/episerver-lifecycle.yml
+content_negotiation:
+  formats: [application/json]
+  graph: GraphQL over HTTP POST
+error_envelope:
+  style: JSON error objects (HTTP status + message); not RFC 9457 problem+json
+webhooks:
+  ref: asyncapi/episerver-webhooks.yml
+rate_limiting:
+  notes: >-
+    Rate limits apply to hosted SaaS/DXP endpoints (Graph, ODP) and are described in
+    per-product docs; not expressed via a single documented header convention.
+idempotency:
+  supported: false
+  notes: No provider-documented idempotency-key header across the REST surface.

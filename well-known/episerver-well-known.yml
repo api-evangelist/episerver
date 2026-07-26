@@ -1,0 +1,29 @@
+generated: '2026-07-19'
+method: searched
+source: live probes of Optimizely / Episerver hosts
+notes: >-
+  Probed the .well-known discovery surface on the primary web host, the developer
+  docs host, and the legacy episerver.com host. No document returned 200, so no raw
+  files were saved. Absence is valid, recorded data. Optimizely Graph / Opti ID OIDC
+  discovery is served under the Opti ID identity platform rather than a public
+  .well-known on the docs host.
+hosts:
+  - host: https://www.optimizely.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+  - host: https://www.episerver.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 301
+        note: legacy host 301-redirects to www.optimizely.com
+  - host: https://docs.developers.optimizely.com
+    documents:
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 302

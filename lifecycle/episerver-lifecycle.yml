@@ -1,0 +1,28 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.developers.optimizely.com/
+notes: >-
+  Optimizely (formerly Episerver) runs multiple product lines under one developer
+  portal, each with its own versioning. Deprecated products are catalogued in a
+  dedicated "Deprecated Products" section of the docs.
+versioning:
+  scheme: per-product (uri-path + product major versions)
+  examples:
+    - product: Content Management REST API
+      current: v3.0
+    - product: Optimizely Graph
+      current: v2
+    - product: Feature Experimentation REST API
+      current: v2
+  docs: https://docs.developers.optimizely.com/
+deprecation:
+  policy_url: https://docs.developers.optimizely.com/deprecated-products/docs/deprecated-products
+  catalog: https://docs.developers.optimizely.com/deprecated-products/reference/about-the-optimizely-full-stack-legacy-apis
+  notes: >-
+    Optimizely maintains a "Deprecated Products" reference (e.g. Full Stack legacy
+    APIs superseded by Feature Experimentation) and publishes breaking-change guides
+    per product (e.g. Commerce Connect 13 to 14).
+status_page: https://status.optimizely.com
+sla:
+  url: https://www.optimizely.com/trust-center/
+  notes: DXP/SaaS availability commitments described in the trust center.

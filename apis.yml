@@ -1,27 +1,146 @@
 aid: episerver
 name: Episerver
-description: 'Episerver is a company surfaced as a portfolio company of northzone and added to the API
-  Evangelist network as a stub for enrichment. Sector: enterprise. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: >-
+  Episerver is a digital experience platform (DXP) vendor that rebranded to Optimizely
+  in 2021 after Episerver acquired Optimizely; the developer surface now ships under the
+  Optimizely brand. The platform combines content management (CMS / Content Cloud), a
+  headless Content Delivery and Content Management REST API, the Optimizely Graph
+  (Content Graph) GraphQL API, Commerce (Configured Commerce and Commerce Connect),
+  Feature Experimentation and Web Experimentation, the Optimizely Data Platform (ODP),
+  the Content Marketing Platform (CMP), and Opti ID for unified OIDC identity. Developers
+  integrate via first-party SDKs for JavaScript, React, Python, Java, C#/.NET, Ruby, PHP,
+  Go and Swift, the EPiServer.CMS .NET libraries on NuGet, REST and GraphQL APIs, and
+  webhooks. This profile was seeded as a portfolio lead and enriched by the API Evangelist
+  pipeline from Optimizely's public developer documentation.
 url: https://raw.githubusercontent.com/api-evangelist/episerver/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://logo.clearbit.com/optimizely.com
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - northzone
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-rebranded-to: Optimizely
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Enterprise
-apis: []
+- Content Management
+- Digital Experience Platform
+- CMS
+- Commerce
+- Experimentation
+- Personalization
+- GraphQL
+- SDKs
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis:
+- name: Optimizely Graph (Content Graph)
+  description: >-
+    GraphQL Content Graph API that indexes CMS/Commerce content for fast, federated
+    querying across the Optimizely platform.
+  humanURL: https://docs.developers.optimizely.com/platform-optimizely/docs/optimizely-graph
+  baseURL: https://cg.optimizely.com
+  properties:
+  - type: GraphQL
+    url: https://docs.developers.optimizely.com/platform-optimizely/docs/optimizely-graph
+  - type: Authentication
+    url: authentication/episerver-authentication.yml
+- name: Optimizely Feature Experimentation REST API
+  description: >-
+    REST API and multi-language SDKs for feature flags, experimentation and rollouts,
+    with the self-hosted Optimizely Agent as a microservice front end.
+  humanURL: https://docs.developers.optimizely.com/feature-experimentation
+  baseURL: https://api.optimizely.com
+  properties:
+  - type: SDKs
+    url: packages/episerver-packages.yml
+- name: Content Management REST API (CMS 12)
+  description: >-
+    Headless Content Delivery, Content Management and Content Definitions REST APIs for
+    the Optimizely (Episerver) CMS.
+  humanURL: https://docs.developers.optimizely.com/content-management-system/reference
+  baseURL: https://cg.optimizely.com
+  properties:
+  - type: Documentation
+    url: https://docs.developers.optimizely.com/content-management-system/reference
 common:
 - type: Website
-  url: http://www.episerver.com
+  url: https://www.optimizely.com
+- type: DeveloperPortal
+  url: https://docs.developers.optimizely.com
+- type: Documentation
+  url: https://docs.developers.optimizely.com
+- type: APIReference
+  url: https://docs.developers.optimizely.com/content-management-system/reference
+- type: GettingStarted
+  url: https://docs.developers.optimizely.com/getting-started
+- type: Support
+  url: https://support.optimizely.com
+- type: Blog
+  url: https://www.optimizely.com/insights/blog/
+- type: GitHubOrganization
+  url: https://github.com/optimizely
+- type: StatusPage
+  url: https://status.optimizely.com
+- type: Deprecation
+  url: https://docs.developers.optimizely.com/deprecated-products/docs/deprecated-products
+- type: Pricing
+  url: https://www.optimizely.com/pricing/
+- type: TermsOfService
+  url: https://www.optimizely.com/legal/website-terms-of-use/
+- type: PrivacyPolicy
+  url: https://www.optimizely.com/privacy-policy/
+- type: Compliance
+  url: https://www.optimizely.com/trust-center/compliance
+- type: TrustCenter
+  url: security/episerver-trust-center.yml
+- type: Security
+  url: https://www.optimizely.com/trust-center/security
+- type: Packages
+  url: packages/episerver-packages.yml
+- type: SDKs
+  url: packages/episerver-packages.yml
+- type: LLMsTxt
+  url: llms/episerver-llms.txt
+- type: WellKnown
+  url: well-known/episerver-well-known.yml
+- type: Authentication
+  url: authentication/episerver-authentication.yml
+- type: Lifecycle
+  url: lifecycle/episerver-lifecycle.yml
+- type: ChangeLog
+  url: changelog/episerver-changelog.yml
+- type: Conventions
+  url: conventions/episerver-conventions.yml
+- type: Conformance
+  url: conformance/episerver-conformance.yml
+- type: Webhooks
+  url: asyncapi/episerver-webhooks.yml
+- type: DomainSecurity
+  url: security/episerver-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/episerver-vulnerability-disclosure.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

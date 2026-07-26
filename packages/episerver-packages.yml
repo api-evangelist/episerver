@@ -1,0 +1,97 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/optimizely
+notes: >-
+  Episerver rebranded to Optimizely in 2021. First-party client libraries span
+  two lineages: the Optimizely Feature Experimentation SDKs (github.com/optimizely,
+  Apache-2.0) and the Episerver/Optimizely CMS + Commerce .NET libraries on NuGet
+  (owner "Episerver, Optimizely"). Only clearly first-party libraries are marked
+  official: true.
+packages:
+  - language: javascript
+    registry: npm
+    name: "@optimizely/optimizely-sdk"
+    url: https://www.npmjs.com/package/@optimizely/optimizely-sdk
+    install: npm install @optimizely/optimizely-sdk
+    source: https://github.com/optimizely/javascript-sdk
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@optimizely/react-sdk"
+    url: https://www.npmjs.com/package/@optimizely/react-sdk
+    install: npm install @optimizely/react-sdk
+    source: https://github.com/optimizely/react-sdk
+    official: true
+  - language: python
+    registry: pypi
+    name: optimizely-sdk
+    url: https://pypi.org/project/optimizely-sdk/
+    install: pip install optimizely-sdk
+    source: https://github.com/optimizely/python-sdk
+    official: true
+  - language: java
+    registry: maven
+    name: com.optimizely.ab:core-api
+    url: https://central.sonatype.com/artifact/com.optimizely.ab/core-api
+    install: "implementation 'com.optimizely.ab:core-api:+'"
+    source: https://github.com/optimizely/java-sdk
+    official: true
+  - language: csharp
+    registry: nuget
+    name: Optimizely.SDK
+    url: https://www.nuget.org/packages/Optimizely.SDK
+    install: dotnet add package Optimizely.SDK
+    source: https://github.com/optimizely/csharp-sdk
+    official: true
+  - language: ruby
+    registry: rubygems
+    name: optimizely-sdk
+    url: https://rubygems.org/gems/optimizely-sdk
+    install: gem install optimizely-sdk
+    source: https://github.com/optimizely/ruby-sdk
+    official: true
+  - language: php
+    registry: packagist
+    name: optimizely/optimizely-sdk
+    url: https://packagist.org/packages/optimizely/optimizely-sdk
+    install: composer require optimizely/optimizely-sdk
+    source: https://github.com/optimizely/php-sdk
+    official: true
+  - language: go
+    registry: pkg.go.dev
+    name: github.com/optimizely/go-sdk
+    url: https://pkg.go.dev/github.com/optimizely/go-sdk
+    install: go get github.com/optimizely/go-sdk
+    source: https://github.com/optimizely/go-sdk
+    official: true
+  - language: swift
+    registry: cocoapods
+    name: OptimizelySwiftSDK
+    url: https://github.com/optimizely/swift-sdk
+    install: pod 'OptimizelySwiftSDK'
+    source: https://github.com/optimizely/swift-sdk
+    official: true
+  - language: csharp
+    registry: nuget
+    name: EPiServer.CMS
+    url: https://www.nuget.org/packages/EPiServer.CMS
+    install: dotnet add package EPiServer.CMS
+    source: https://nuget.optimizely.com/
+    official: true
+    note: Episerver/Optimizely CMS (Content Cloud) core meta-package.
+  - language: csharp
+    registry: nuget
+    name: EPiServer.ContentDeliveryApi
+    url: https://www.nuget.org/packages/EPiServer.ContentDeliveryApi
+    install: dotnet add package EPiServer.ContentDeliveryApi
+    source: https://nuget.optimizely.com/
+    official: true
+    note: Content Delivery REST API for headless CMS.
+  - language: csharp
+    registry: nuget
+    name: EPiServer.ServiceApi
+    url: https://www.nuget.org/packages/EPiServer.ServiceApi
+    install: dotnet add package EPiServer.ServiceApi
+    source: https://nuget.optimizely.com/
+    official: true
+    note: Commerce Connect Service API integration endpoints.

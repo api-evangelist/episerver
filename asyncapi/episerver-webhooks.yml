@@ -1,0 +1,30 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.developers.optimizely.com/
+spec_type: Webhooks
+notes: >-
+  Optimizely (formerly Episerver) documents webhooks across several products but does
+  not publish an AsyncAPI document, so this captures the webhook catalog rather than a
+  verbatim event spec. No AsyncAPI is fabricated.
+webhooks:
+  - product: Feature Experimentation
+    docs: https://docs.developers.optimizely.com/feature-experimentation/docs/configure-webhooks
+    operations:
+      - create_webhook
+      - update_webhook
+      - list_webhooks
+      - delete_webhook
+    description: >-
+      Webhooks notify subscribed endpoints when the Feature Experimentation datafile
+      changes so SDKs/Agent can re-fetch configuration.
+  - product: Feature Experimentation - Agent
+    docs: https://docs.developers.optimizely.com/feature-experimentation/docs/webhooks-agent
+    description: Agent supports datafile-change webhook notifications.
+  - product: Optimizely Graph (Content Graph)
+    docs: https://docs.developers.optimizely.com/digital-experience-platform/docs/nextjs-isr-caching-and-optimizely-graph-webhooks
+    description: >-
+      Content Graph emits webhooks on content publish so front ends (e.g. Next.js ISR)
+      can revalidate cached content.
+  - product: Configured Commerce
+    docs: https://docs.developers.optimizely.com/configured-commerce/reference/paymentauthenticationv1_adyenwebhook
+    description: Adyen payment-authentication webhook endpoint for commerce payments.
