@@ -64,114 +64,23 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Episerver is a digital experience platform (DXP) vendor that rebranded to Optimizely in 2021 after Episerver acquired Optimizely; the developer surface now ships under the Optimizely brand. The platform combines content management (CMS / Content Cloud), a headless Content Delivery and Content Management REST API, the Optimizely Graph (Content Graph) GraphQL API, Commerce (Configured Commerce and Commerce Connect), Feature Experimentation and Web Experimentation, the Optimizely Data Platform (ODP), the Content Marketing Platform (CMP), and Opti ID for unified OIDC identity. Developers integrate via first-party SDKs for JavaScript, React, Python, Java, C#/.NET, Ruby, PHP, Go and Swift, the EPiServer.CMS .NET libraries on NuGet, REST and GraphQL APIs, and webhooks. This profile was seeded as a portfolio lead and enriched by the API Evangelist pipeline from Optimizely's public developer documentation.
+> **Retired — merged into [Optimizely](https://apis.io/providers/optimizely/).** The two records described the same company, and that one is canonical. Nothing in this repository is maintained any more.
 
-**Areas:** Company · Enterprise · Content Management · Digital Experience Platform · CMS · Commerce · Experimentation · Personalization · GraphQL · SDK
+**Why:** Episerver rebranded to Optimizely in 2021 (its own description says so). Kin, 2026-10-28, roadmap#1045.
 
-## Episerver on APIs.io
+**Retired:** 2026-10-28
 
-Everything profiled for Episerver is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/episerver/](https://apis.io/providers/episerver/)** — or go straight to one of the APIs or properties below.
+## Where to go now
 
-### APIs (3)
+The current profile, APIs, artifacts and rating for Optimizely are on APIs.io at **[apis.io/providers/optimizely/](https://apis.io/providers/optimizely/)**.
 
-- [Optimizely Graph (Content Graph)](https://apis.io/apis/episerver/optimizely-graph-content-graph/) — GraphQL Content Graph API that indexes CMS/Commerce content for fast, federated querying across the Optimizely platform.
-- [Optimizely Feature Experimentation REST API](https://apis.io/apis/episerver/optimizely-feature-experimentation-rest-api/) — REST API and multi-language SDKs for feature flags, experimentation and rollouts, with the self-hosted Optimizely Agent as a microservice front end.
-- [Content Management REST API (CMS 12)](https://apis.io/apis/episerver/content-management-rest-api-cms-12/) — Headless Content Delivery, Content Management and Content Definitions REST APIs for the Optimizely (Episerver) CMS.
+Pages that used to belong to this profile now live at:
 
-### Published properties
-
-Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
-
-#### AsyncAPI (1)
-
-Event-driven and webhook contracts.
-
-- [Episerver Webhooks](https://apis.io/asyncapis/episerver/episerver-webhooks/)
-
-#### MCP servers (1)
-
-Model Context Protocol servers that expose the API to agents.
-
-- [episerver](https://apis.io/servers/episerver/episerver/)
-
-#### Security (4)
-
-Authentication, trust centre, and vulnerability disclosure.
-
-- [Episerver Authentication](https://apis.io/security/episerver/episerver-authentication/)
-- [Episerver Domain Security](https://apis.io/security/episerver/episerver-domain-security/)
-- [Episerver Trust Center](https://apis.io/security/episerver/episerver-trust-center/)
-- [Episerver Vulnerability Disclosure](https://apis.io/security/episerver/episerver-vulnerability-disclosure/)
-
-## Where to find this API
-
-Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
-
-- [Website](https://www.optimizely.com)
-- [Documentation](https://docs.developers.optimizely.com)
-- [Getting started](https://docs.developers.optimizely.com/getting-started)
-- [API reference](https://docs.developers.optimizely.com/content-management-system/reference)
-- [Pricing](https://www.optimizely.com/pricing/)
-- [Support](https://support.optimizely.com)
-- [Blog](https://www.optimizely.com/insights/blog/)
-- [Security](https://www.optimizely.com/trust-center/security)
-- [Compliance](https://www.optimizely.com/trust-center/compliance)
-- [Terms of service](https://www.optimizely.com/legal/website-terms-of-use/)
-- [Privacy policy](https://www.optimizely.com/privacy-policy/)
-- [GitHub](https://github.com/optimizely)
-- [Status](https://status.optimizely.com)
-
-## API Evangelist rating
-
-**Kin Score 50.0** — developing · rubric 0.25.0 · scored 2026-10-23
-
-| Facet | Score |
-|---|---|
-| Discoverability | 80.0 |
-| Contract quality | 39.0 |
-| Contract governance | 18.2 |
-| Operational transparency | 56.6 |
-| Developer ergonomics | 51.2 |
-| Access clarity | 47.4 |
-
-**Agent readiness 32.0** — agent-ready
-
-| Agent-readiness dimension | Result |
-|---|---|
-| Spec Presence | yes |
-| Agentic Access | — |
-| Reversibility Documented | — |
-| MCP Server | verified |
-| Auth Clarity | bearer (partial credit) |
-| Idempotency | — |
-| Error Semantics | — |
-| OpenAPI Examples | — |
-| Rate Limit Signal | — |
-| Event Surface Described | yes |
-| Agent Skills | — |
-| Well Known Catalog | — |
-| Consent Identity | — |
-| Agent Card | — |
-| Dry Run Mode | — |
-| Delegated Identity | — |
-| Protected Resource Metadata | verified |
-| Dynamic Client Registration | — |
-| Agentic Commerce | — |
-| Pagination Ratio | na |
-| Operation Distinctiveness | na |
-
-**Regulatory alignment 35.3** — Horizontal (data, software, accessibility, platform)
-
-The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/episerver/](https://apis.io/providers/episerver/).
-
-## How this profile is made
-
-API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
-
-The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Episerver: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+- [Optimizely Webhooks](https://apis.io/asyncapis/optimizely/optimizely-webhooks/)
+- [Optimizely Authentication](https://apis.io/security/optimizely/optimizely-authentication/)
+- [Optimizely Domain Security](https://apis.io/security/optimizely/optimizely-domain-security/)
+- [Optimizely Trust Center](https://apis.io/security/optimizely/optimizely-trust-center/)
 
 ## Open an issue
 
-- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/episerver/issues/new).
-- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
-- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
+Issues about Optimizely belong on the canonical profile: [open one on api-evangelist/optimizely](https://github.com/api-evangelist/optimizely/issues/new). If you think this merge was a mistake — these were really two companies — say so there or email [info@apievangelist.com](mailto:info@apievangelist.com).
